@@ -20,7 +20,8 @@ class Cliente {
 
   nombre: String;
   apellidos: String;
-  nCuenta: number = 0;
+  static _nCuenta: number = 0;
+  nCuenta: number;
   dni: String;
   tlf: number;
   email: String;
@@ -33,7 +34,7 @@ class Cliente {
     this.dni = dni;
     this.tlf = tlf;
     this.email = email;
-    this.nCuenta = this.nCuenta + 1
+    this.nCuenta = Cliente._nCuenta++;
   }
 
   addMovement(movimiento: Movimiento) {
