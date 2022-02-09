@@ -21,6 +21,7 @@ class Cliente {
 
   nombre: String;
   apellidos: String;
+  nCuenta: number = 0;
   dni: String;
   tlf: number;
   email: String;
@@ -33,6 +34,7 @@ class Cliente {
     this.dni = dni;
     this.tlf = tlf;
     this.email = email;
+    this.nCuenta = this.nCuenta + 1
   }
 
   addMovement(movimiento: Movimiento) {
