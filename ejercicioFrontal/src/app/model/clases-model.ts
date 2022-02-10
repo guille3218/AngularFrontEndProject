@@ -1,10 +1,10 @@
 export class Movimiento {
-    descripcion: String;
+    descripcion: string;
     fecha: Date;
     cantidad: number;
     balance: number = 0;
 
-    constructor(descripcion: String, fecha: Date, cantidad: number) {
+    constructor(descripcion: string, fecha: Date, cantidad: number) {
         this.descripcion = descripcion;
         this.fecha = fecha;
         this.cantidad = cantidad;
@@ -16,17 +16,17 @@ export class Movimiento {
 
 export class Cliente {
 
-    nombre: String;
-    apellidos: String;
+    nombre: string;
+    apellidos: string;
     static _nCuenta: number = 0;
     nCuenta: number;
-    dni: String;
+    dni: string;
     tlf: number;
-    email: String;
+    email: string;
     saldo: number = 0;
     movimientos: Movimiento[] = [];
 
-    constructor(nombre: String, apellidos: String, dni: String, tlf: number, email: String) {
+    constructor(nombre: string, apellidos: string, dni: string, tlf: number, email: string) {
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.dni = dni;

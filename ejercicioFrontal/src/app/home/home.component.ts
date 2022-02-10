@@ -30,7 +30,7 @@ export class HomeComponent implements OnInit {
     this.clienteTable = array;
   }
 
-  deleteClient(event: String) {
+  deleteClient(event: string) {
     let array = [...this.clienteTable].filter(function filterByDNI(client: Cliente) {
       return client.dni != event;
 
